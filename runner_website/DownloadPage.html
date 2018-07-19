@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Runner Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wide=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<style>
+	body {
+	/*background-color: #008080;*/
+/*	border: 5px solid white;
+*/	padding-top: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 275px;
+	background: yellow;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 7s infinite;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: orange;
+	}
+
+	h1 {
+    font-weight: bold;
+    font-size: 60px;
+		padding-left: 100px;
+    padding-right: 100px;
+	}
+	h3 {
+    font-weight: bold;
+    font-size: 30px;
+		padding-left: 100px;
+    padding-right: 100px;
+	}
+	p {
+    color: black;
+    font-size: 15px;
+		padding-left: 100px;
+		padding-bottom: 10px;
+    padding-right: 200px;
+	}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {background-color: red;}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+	</div>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Welcome to the Time Runner Website!</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="HomePage.html">Home</a></li>
+         <li><a href="AboutPage.html">About</a></li>
+        <li><a href="ProgressPage.html">Our Progress</a></li>
+        <li class="active"><a href="#">Download Our Game<span class="sr-only">(current)</span></a></li>
+
+
+        <li class="dropdown">
+         <!--  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Erinna<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.facebook.com/erinna.woo.9?fref=ts">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/erinna-woo-452b87106?authType=NAME_SEARCH&authToken=DnhE&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A450813374%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1468959961830%2Ctas%3Aerinna">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/erinna_woooo/">Instagram</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li> --> 
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+       <ul class="nav navbar-nav navbar-right">
+       <!--  <li><a href="#">Link</a></li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact the Game Creators <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.linkedin.com/in/alanna-z-411140121">Alanna's LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/olivia-mendoza-50713b121">Olivia's LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/aimee-l-b4513b121">Aimee's LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/jessica-dinh-b0713a121 ">Jessica's LinkedIn</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://girlswhocode.com/">Girls Who Code</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  	<div id="abouttext">
+	<h1>How to Download Our Game</h1>
+	<h3>Instructions:</h3>  
+  <p>1. Click on the button to download a zip file <a href = "2016_SIP_AdobeSJ_Lovelace_TimeRunner-master.zip" class="glyphicon glyphicon-download-alt"></a></p>
+  <p>2. In order to run the game, you must have python and pygame downloaded. Here are the links to download both (make sure versions are compatible with each other):</p>
+  <p>Python: https://www.python.org/downloads/</p>
+  <p>Pygame: http://www.pygame.org/download.shtml</p>
+  <p>3.  Once both downloads are complete, go to your 2016_SIP_AdobeSJ_Lovelace folder.</p>
+  <p>4.  (OPTIONAL) If you want, find the time_runner.py file, right click, and click on “Edit with IDLE”. This would open the app that you would play and allow you to see the code for it.</p>
+  <p>5. Open command prompt in the downloaded folder, and type (without quotes):</p>
+  <p>“cd 2016_SIP_AdobeSJ_Lovelace_TimeRunner-master” (enter)</p>
+  <p>“python time_runner.py”</p>
+	</div>
+
+
+</body>
+

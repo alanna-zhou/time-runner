@@ -1,0 +1,71 @@
+body {
+	/*background-color: #008080;*/
+	border: 10px solid white;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-left: 60px;
+	padding-bottom: 80px;
+	background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: white;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {background-color: blue;}
+}
+
+.button {
+    background-color: #ff00ff; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
